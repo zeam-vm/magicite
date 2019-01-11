@@ -4,7 +4,7 @@ defmodule Magicite.MixProject do
   def project do
     [
       app: :magicite,
-      version: "0.0.0",
+      version: "0.0.1",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -28,7 +28,7 @@ defmodule Magicite.MixProject do
   end
 
   defp description() do
-    "Magicite: a meta-programming library for Hastega and Cockatoris"
+    "Magicite: LLVM binding for Elixir"
   end
 
   defp package() do
