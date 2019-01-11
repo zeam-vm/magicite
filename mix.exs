@@ -7,6 +7,8 @@ defmodule Magicite.MixProject do
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
+      description: description(),
+      package: package(),
       deps: deps()
     ]
   end
@@ -24,4 +26,18 @@ defmodule Magicite.MixProject do
       { :ex_doc,      ">= 0.0.0", only: :dev}
     ]
   end
+
+  defp description() do
+    "Magicite: a meta-programming library for Hastega and Cockatoris"
+  end
+
+  defp package() do
+    [
+      name: "magicite",
+      maintainers: ["Susumu Yamazaki", "Masakazu Mori", "Yoshihiro Ueno", "Hideki Takase"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/zeam-vm/magicite"}
+    ]
+  end
+
 end
